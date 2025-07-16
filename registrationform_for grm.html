@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Registration form</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        img{
+            size: 10px;
+            margin: auto;
+            display: block;
+        }
+        h1,p{
+            text-align: center;
+            color: white;
+            font-style:inherit;
+        }
+        hr{
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        h2{
+            margin-left: 50px;
+            color: white;
+            font-style: inherit;
+            font-size: 40px;
+        }
+        form{
+            color: white;
+            margin-left: 50px;
+            font-size: large;
+        }
+        .firstname{
+            font-size: 10px;
+        }
+        .lastname{
+            margin-left: 200px;
+            font-size: 10px;
+        }
+        #lname{
+            margin-left: 50px;
+        }
+        .number{
+            margin-left: 180px;
+            font-size: 10px;
+        }
+        .mail{
+            font-size: 10px;
+        }
+        #number{
+            margin-left: 50px;
+        }
+        #male{
+            margin-top: 15px;
+            
+        }
+        #female{
+            margin-left: 180px;
+        }
+        #other{
+            margin-top: 20px;
+        }
+        #Address{
+            width: 420px;
+            padding: 5px 13px;
+            border-radius: 5px;
+        }
+        .state{
+            margin-left: 230px;
+            font-size: 11px;
+        }
+        .country{
+            margin-left: 170px;
+            font-size: 11px;
+        }
+        .height{
+            margin-left: 175px;
+            font-size: 11px;
+        }
+        .weight{
+            margin-left: 230px;
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+    <form action="gym.html" target="_blank">
+        <img src="GYM.png" alt="Gym Image">
+        <h1>Gym Registration Form</h1>
+        <p style="font-size: 20px;">Join our gym and start your fitness journey today! Please fill out the form to register.</p>
+        <hr>
+        <h2>Personal Information</h2>
+        <hr>
+        <h3>Full Name</h3>
+        <form>
+            <label for="fnname">Full Name</label><br><br>
+            <input type="text" name="fname" id="fname" style="padding: 5px 13px; border-radius: 5px;">
+            <input type="text" name="lname" id="lname" style="padding: 5px 13px; border-radius: 5px;"><br>
+            <label for="fname" class="firstname">Firstname</label>
+            <label for="lname" class="lastname">Last Name </label>
+          
+            
+
+           <!----------------------------------------------------------------------------> 
+          
+            
+          <br><br><br>
+          <input type="email" name="email" id="email" style="padding: 5px 13px; border-radius: 5px;">
+          <input type="number" name="number" id="number" style="padding: 5px 13px; border-radius: 5px;"><br>
+            <label for="email" class="mail">Email Address</label>
+            <label for="number" class="number">Phone Number</label>
+
+            <!-------------------------------------------------------------------------------->
+
+
+            <br><br>
+            <label for="dob" style="font-size: 15px; font-weight: bold;" >Date of Birth</label><br>
+            <input type="date" name="dob" id="dob" style="padding: 5px 13px; border-radius: 5px;margin-top: 7px; ">
+            
+            <br><br>
+
+            <!-------------------------------------------------------------------------------------->
+
+            <label for="gender" style="font-size: 15px; font-weight: bold;">Gender</label><br>
+            <input type="radio" name="gender" id="male" >male
+            <input type="radio" name="gender" id="female">female<br>
+            <input type="radio" name="gender" id="other">other
+            
+            <br><br>
+
+         <!---------------------------------------------------------------------------->
+
+
+            
+            <input type="text" name="Address" id="Address"><br>
+            <label for="Address" style="font-size: 12px;">Address</label><br><br>
+            <!-------------------------------------------------------------------------->
+
+            <input type="text" name="city" id="city" style="padding: 5px 13px; border-radius: 5px;">
+            <input type="text" name="" id="" style="padding: 5px 13px; border-radius: 5px; margin-left: 55px;"><br>
+            <label for="city" style="font-size: 11px;">City</label>
+            <label for="state" class="state">State</label>
+            
+            <br><br>
+
+            <!----------------------------------------------------------------------------->
+            <input type="number" name="Zip Code" id="Zip Code" style="padding: 5px 13px; border-radius: 5px;">
+            <input type="text" name="" id="" style="padding: 5px 13px; border-radius: 5px; margin-left: 55px;"><br>
+            <label for="zip code" style="font-size: 11px;">Postal/Zip Code</label>
+            <label for="Country" class="country">Country</label>
+            
+            <br><br>
+
+            <!----------------------------------------------------------------------->
+
+            <input type="number" name="Weight" id="Weight" style="padding: 5px 13px; border-radius: 5px;">
+            <input type="number" name="Height" id="Height" style="padding: 5px 13px; border-radius: 5px; margin-left: 55px;"><br>
+            <label for="Weight" style="font-size: 11px;">Current Weight</label>
+            <label for="Height" class="height">Height</label>
+        
+            <br><br>
+
+            <!-------------------------------------------------------------------->
+            
+            <input type="number" name="BMI" id="BMI" style="padding: 5px 13px; border-radius: 5px;">
+            <input type="number" name="Weight" id="Weight" style="padding: 5px 13px; border-radius: 5px; margin-left: 55px;"><br>
+            <label for="BMI" style="font-size: 11px;">BMI</label>
+            <label for="Weight" class="weight">Goal Weight</label>
+            
+            <br><br>
+
+            <!----------------------------------------------------------------------->
+        </form>
+        <h2>Emergency Contact Information</h2>
+        <hr>
+        <form>
+        <label for="fname">Emergency Contact Name</label><br>
+        <input type="text" name="fname" id="fname"><br><br>
+        <label for="fname">Relationship</label>
+        <input type="text" name="fname" id="fname"><br><br>
+        <label for="number">Emergency Contact Phone Number</label>
+        <input type="number" name="number" id="number"><br><br>
+        </form>
+        <h2>Medical Information</h2>
+        <hr>
+        <form>
+            <label for="fname">Do you have any medical conditions or allergies?</label><br>
+            <input type="radio" name="fname" id="fname">Yes
+            <input type="radio" name="fname" id="fname">No<br><br>
+            <label for="fname">If yes,please provide details</label><br>
+            <input type="textarea" name="fname" id="fname"><br><br>
+        </form>
+        <h2>Membership Information</h2>
+        <hr>
+        <form>
+            <label for="fname">Choose Membership Type</label><br>
+            <input type="radio" name="fname" id="fname">Basic
+            <input type="radio" name="fname" id="fname">Premium
+            <input type="radio" name="fname" id="fname">Diamond<br><br>
+            <label for="date">Preferred Start Date</label><br>
+            <input type="date" name="date" id="date"><br><br>
+            <input type="checkbox" name="fname" id="fname">
+            <label for="fname">I agree to <a href="#" style=" color: blue;">terms & conditions</a></label><br><br>
+        </form>
+        <hr>
+        <button style="margin-left: 45%; top: 10px;height: 25px;width:75px;font-size:15px;"type="submit" name="fname" id="fname"><a href="gym.html" style=" text-decoration: none; color: black; font-size: 16px;">submit</a></button>
+        </form>
+</body>
+</html> 

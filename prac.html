@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Browser</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <p>This is where you would include the text and images on your Web page.</p>
+  
+  <form>
+    <fieldset>
+      <legend>User Information:</legend>
+      <p>Ogendra Prasad P</p>
+    </fieldset>
+  </form>
+  
+ <canvas id="can" height="300px" width="400px" ></canvas>
+ <script>
+    var canvas=document.getElementById("can");
+    var c=canvas.getContext("2d");
+    c.fillStyle="red";
+    c.fillRect(100,100,100,100);
+    c.beginPath();
+    c.moveTo(0,0);
+    c.lineTo(300,100);
+    c.lineTo(0,100);
+    c.strokeStyle="blue";
+    c.stroke();
+    c.beginPath();
+ c.arc(95, 50, 40, 0, 2 * Math.PI);
+ c.strokeStyle="green";
+ c.stroke();
+ c.font = "30px Arial";
+ c.fillStyle="silver";
+ c.fillText(“DS",10,50);
+ c.font = "30px Arial";
+ c.strokeStyle="yellow"
+ c.strokeText(“PK",10,90);
+ </script>
+</body>
+
+</html>
